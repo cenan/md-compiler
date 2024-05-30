@@ -8,10 +8,6 @@ import remarkHeadingId from 'remark-heading-autoid';
 
 const app = express();
 app.use(bodyParser.json());
-import cors from "cors";
-app.use(cors({
-	origin: 'http://localhost:4545'
-}));
 
 app.get("/", (req, res) => {
 	res.send("Hello World!");
